@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clousy_irl // Brent Bwayo</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-color: #ffffff;
+            --accent-color: #ff0033; /* YVL Red vibe */
+            --muted-color: #888888;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+            padding: 2rem;
+        }
+
+        header {
+            max-width: 1000px;
+            margin: 0 auto 4rem auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            margin-bottom: 6rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--muted-color);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 6rem;
+        }
+
+        .card {
+            border: 1px solid #1a1a1a;
+            padding: 2rem;
+            border-radius: 4px;
+            background: #0b0b0b;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card p {
+            color: var(--muted-color);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            max-width: 1000px;
+            margin: 0 auto;
+            border-top: 1px solid #1a1a1a;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            color: var(--muted-color);
+            font-size: 0.85rem;
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            body { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">clousy<span>_irl</span></div>
+        <nav><a href="https://instagram.com" target="_blank">@clousy_irl</a></nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Brent Bwayo</h1>
+            <p>Nairobi-based creative blending a distinctive online aesthetic and YVL culture with emerging skills in web development and robotics.</p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>The Aesthetic</h3>
+                <p>Curating a unique digital identity through striking picture posts, personal style, and visual storytelling on Instagram.</p>
+            </div>
+            <div class="card">
+                <h3>The Developer</h3>
+                <p>Building clean front-end interfaces, turning conceptual layouts into operational websites using modern web tech.</p>
+            </div>
+            <div class="card">
+                <h3>The Innovator</h3>
+                <p>Exploring the intersections of hardware and software, focusing on how robotics can solve modern practical problems.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brent Bwayo. All rights reserved.</p>
+        <p>Nairobi, Kenya</p>
+    </footer>
+
+</body>
+</html>
